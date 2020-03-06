@@ -9,13 +9,14 @@ class SignInButton extends CustomRaisedButton {
     VoidCallback onPressed,
     
   }) :super(
-        child: Text(
-                text, 
-                style: TextStyle(
-                  color: textColor, 
-                  fontSize: 15
-                ),
-              ),
+        child: 
+          Text(
+            text, 
+            style: TextStyle(
+              color: textColor, 
+              fontSize: 15
+            ),
+          ),
         color: color,
         borderRadius: 4,
         onPressed: onPressed,
