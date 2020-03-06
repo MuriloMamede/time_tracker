@@ -36,6 +36,7 @@ class SignInPage extends StatelessWidget {
               text: 'Sign in with Google',
               color: Colors.white,
               onPressed: (){},
+              image: 'images/google-logo.png',
             ),
             SizedBox(height: 8),
             SignInButton(
@@ -43,12 +44,14 @@ class SignInPage extends StatelessWidget {
               textColor: Colors.white,
               color: Color(0xFF334D92),
               onPressed: (){},
+              image: 'images/facebook-logo.png',
             ),
             SizedBox(height: 8),
             SignInButton(
               text: 'Sign in with email',
               textColor: Colors.white,
               color: Colors.teal,
+              image: 'images/google-logo.png',
               onPressed: (){},
             ),
             SizedBox(height: 8),
@@ -63,7 +66,9 @@ class SignInPage extends StatelessWidget {
               textColor: Colors.black,
               color: Colors.lime[300],
               onPressed: (){},
+              image: 'images/google-logo.png',
             ),
+            
           ]
         ),
       ),
