@@ -2,4 +2,4 @@
 
 Project to Learn Firebase
 
-[]Firebase Auth
+[x]Firebase Auth
