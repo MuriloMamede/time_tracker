@@ -3,16 +3,19 @@ import 'package:time_tracker/commom_widgets/custom_raised_button.dart';
 
 class SocialSignInButton extends CustomRaisedButton {
   SocialSignInButton({
-    String text,
+    @required String text,
     Color color,
     Color textColor,
     VoidCallback onPressed,
-    String image,
-  }) :super(
+    @required String assetName,
+  }) :
+      assert(assetName != null),
+      assert(text != null),
+      super(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Image.asset(image),
+            Image.asset(assetName),
             Text(
               text, 
               style: TextStyle(
@@ -21,7 +24,7 @@ class SocialSignInButton extends CustomRaisedButton {
               ),
             ),
             Opacity(
-              child: Image.asset(image),
+              child: Image.asset(assetName),
               opacity: 0,
             ),
           ],       
