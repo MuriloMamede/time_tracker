@@ -13,12 +13,19 @@ class SignInPage extends StatelessWidget {
   Future <void> _signInAnonysmously() async{
     try{
      await auth.signInAnonymously();
-     
     } catch(e){
       print(e.toString());
     }
-    
   }
+
+  Future <void> _signInWithGoogle() async{
+    try{
+     await auth.signInWithGoogle();  
+    } catch(e){
+      print(e.toString());
+    } 
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +59,7 @@ class SignInPage extends StatelessWidget {
             SocialSignInButton(
               text: 'Sign in with Google',
               color: Colors.white,
-              onPressed: (){},
+              onPressed: _signInWithGoogle,
               assetName: 'images/google-logo.png',
             ),
             SizedBox(height: 8),
